@@ -1,5 +1,9 @@
 FOR RUNNING 
 
 
-
-OPEN BACKEND TYPE = NPM START
+steps 1 
+on client folder = npm i
+step 2
+on backend folder = npm i
+step 3
+on backend folder = npm start
