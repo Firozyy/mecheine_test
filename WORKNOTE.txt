@@ -7,3 +7,10 @@ step 2
 on backend folder = npm i
 step 3
 on backend folder = npm start
+
+
+
+admin login
+
+email : firosd2@gmail.com
+password:123456
