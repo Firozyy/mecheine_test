@@ -65,5 +65,5 @@ const store = configureStore({
 export default store;
 
 
-export const server = 'https://test-ecommerse.onrender.com:10000/api/v1'
+export const server = 'https://test-ecommerse.onrender.com:8080/api/v1'
 // export const server = 'http://localhost:8080/api/v1'
