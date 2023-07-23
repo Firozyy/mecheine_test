@@ -24,35 +24,34 @@ const ProductCarousal = ({ products }) => {
         }
     };
     return (
-      
-                <Container>
-                <h4 className='text-dark'>Exclusive Deals</h4>
-                    <Carousel responsive={responsive}>
-                        {products.map(item => (
+
+        <Container>
+            <h4 className='text-dark'>Exclusive Deals</h4>
+            <Carousel responsive={responsive}>
+                { products && products.map(item => (
 
 
-                            <Card className='border-0 card' style={{ width: '16rem' }}>
-                                  <Link to={`/product/${item._id}`}>
-                                  <Card.Img className="carousalimage" variant="top" src={item.image.image_url} />
-                            </Link>
-                               
-                                <Card.Body>
+                    <Card className='border-0 card' style={{ width: '16rem' }}>
+                        <Link to={`/product/${item._id}`}>
+                            <Card.Img className="carousalimage" variant="top" src={item.image.image_url} />
+                        </Link>
 
-                                    <Card.Text >
-                                        <b> {item.name}</b>
-                                    </Card.Text>
-                                    <p className='text-primary'>{item.price}</p>
-                                </Card.Body>
-                            </Card>
+                        <Card.Body>
 
-
-
-                        ))}
+                            <Card.Text >
+                                <b> {item.name}</b>
+                            </Card.Text>
+                            <p className='text-primary'>{item.price}</p>
+                        </Card.Body>
+                    </Card>
 
 
-                    </Carousel>
-                </Container>
-      
+
+                ))}
+
+
+            </Carousel>
+        </Container>
 
 
     )
